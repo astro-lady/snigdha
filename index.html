@@ -24,39 +24,39 @@
 @media(max-width:760px){.landing{grid-template-columns:1fr}.right{padding:30px 18px 50px}.tiles{grid-template-columns:1fr 1fr}.photos{grid-template-columns:1fr 1fr}.home,.section{padding:22px 16px}.head h2{font-size:39px}.letter{padding:55px 28px 45px}.s1,.s2{display:none}}@media(max-width:470px){.tiles,.photos{grid-template-columns:1fr}.row{flex-direction:column}.left h1{font-size:65px}.hero h2{font-size:53px}.photos{gap:25px}.section{padding:18px 12px}.letter{font-size:18px}}
 </style></head>
 <body>
-<section id="landing" class="page"><div class="card"><div class="landing"><div class="left"><span class="sticker s1">✦</span><span class="sticker s2">🌼</span><span class="sticker s3">♡</span><span class="sticker s4">✿</span><div style="width:min(270px,80%);padding:10px;background:#fff;transform:rotate(-3deg);box-shadow:7px 8px 0 #332d3b44;border:1px solid #777"><div id="landingDog" class="placeholder" style="height:205px">YOUR<br>SNOOPY / DOG<br>IMAGE HERE ♡</div></div><h1>A little<br>something<br>for you ♡</h1><p>A tiny corner of the internet made especially for your birthday.</p></div><div class="right"><span class="sticker s1">☁︎</span><span class="sticker s2">✦</span><div class="pass"><h2>shhh... it's secret 🤫</h2><p>Enter the little password to open your birthday scrapbook.</p><div class="row"><input id="pw" type="password" placeholder="password"><button class="btn" onclick="unlock()">open ♡</button></div><div id="err" class="err"></div></div></div></div></div></section>
-<section id="home" class="page hidden"><div class="card home"><div class="tape"></div><div class="hero"><div class="heroPhoto" id="hero"><div class="placeholder">YOUR<br>FAVOURITE<br>PHOTO HERE ♡</div></div><h2>HAPPY BIRTHDAY, <span id="name">YOUR FRIEND</span>! ♡</h2><div class="scribble">✿ a little scrapbook made just for you ✿</div><p>I made you a tiny internet-shaped present because apparently a normal card was not enough.</p><p style="font-size:14px">Click around. There are little things hidden in here for you ↓</p></div><div class="tiles"><button class="tile cam" onclick="show('memories')"><div class="icon">📷</div><h3>little moments</h3><p>open the camera roll ♡</p></button><button class="tile let" onclick="show('letterPage')"><div class="icon">💌</div><h3>a letter</h3><p>things I wanted to tell you</p></button><button class="tile cas" onclick="show('cassettePage')"><div class="icon">🎶</div><h3>our mixtape</h3><p>songs that remind me of you</p></button><button class="tile gift" onclick="show('surprise')"><div class="icon">🎁</div><h3>one more thing</h3><p>okay fine, one last surprise</p></button></div><div class="bottomnote">made with love, nostalgia & approximately 900 photos ♡</div></div></section>
-<section id="memories" class="page hidden"><div class="card section"><span class="doodle flower1">🌷</span><span class="doodle cat1">🐱</span><div class="head"><h2>✿ our little archive</h2><button class="back" onclick="home()">← back</button></div><div class="search">⌕ moments with <b id="sname">YOUR FRIEND</b></div><div class="archiveintro">about <b>too many</b> results found... here are some of my favourites ♡</div><div id="photos" class="photos"></div></div></section>
+<section id="landing" class="page"><div class="card"><div class="landing"><div class="left"><span class="sticker s1">✦</span><span class="sticker s2">🌼</span><span class="sticker s3">♡</span><span class="sticker s4">✿</span><div style="width:min(270px,80%);padding:10px;background:#fff;transform:rotate(-3deg);box-shadow:7px 8px 0 #332d3b44;border:1px solid #777"><div id="landingDog" class="placeholder" style="height:205px">YOUR<br>SNOOPY / DOG<br>IMAGE HERE ♡</div></div><h1>Loads of<br>love ♡</h1><p>Wanted to give you something handmade. I guess net-made counts.</p></div><div class="right"><span class="sticker s1">☁︎</span><span class="sticker s2">✦</span><div class="pass"><h2>shhh... it's secret 🤫</h2><p>Enter the little password to open your birthday scrapbook.</p><div class="row"><input id="pw" type="password" placeholder="password"><button class="btn" onclick="unlock()">open ♡</button></div><div id="err" class="err"></div></div></div></div></div></section>
+<section id="home" class="page hidden"><div class="card home"><div class="tape"></div><div class="hero"><div class="heroPhoto" id="hero"><div class="placeholder">YOUR<br>FAVOURITE<br>PHOTO HERE ♡</div></div><h2>HAPPY BIRTHDAY, <span id="name">YOUR FRIEND</span>! ♡</h2><div class="scribble">✿ I made a little scrapbook for you ✿</div></div><div class="tiles"><button class="tile cam" onclick="show('memories')"><div class="icon">📷</div><h3>little moments</h3><p>open the camera roll ♡</p></button><button class="tile let" onclick="show('letterPage')"><div class="icon">💌</div><h3>a letter</h3><p>things I wanted to tell you</p></button><button class="tile cas" onclick="show('cassettePage')"><div class="icon">🎶</div><h3>our mixtape</h3><p></p></button><button class="tile gift" onclick="show('surprise')"><div class="icon">🎁</div><h3>one more thing</h3><p>okay fine, one last surprise</p></button></div><div class="bottomnote">With all the love in the world, your roomie forever ♡</div></div></section>
+<section id="memories" class="page hidden"><div class="card section"><span class="doodle flower1">🌷</span><span class="doodle cat1">🐱</span><div class="head"><h2>✿ Our Little Archive</h2><button class="back" onclick="home()">← back</button></div><div class="search">⌕ Some of my favorite moments</div><div class="archiveintro">About too many results found here are, but here we go. ♡</div><div id="photos" class="photos"></div></div></section>
 <section id="letterPage" class="page hidden"><div class="card section"><span class="doodle flower1">🌼</span><div class="head"><h2>♡ a letter for you</h2><button class="back" onclick="home()">← back</button></div><div class="letterWrap"><div class="letter"><h3>Dear <span id="lname">YOUR FRIEND</span>,</h3><div id="letterText"></div><div class="flowerline">✿ ❀ ✿</div><div class="signature">Love,<br><b>your favourite menace ♡</b></div></div></div></div></section>
-<section id="cassettePage" class="page hidden"><div class="card section"><div class="head"><h2>♪ our mixtape</h2><button class="back" onclick="home()">← back</button></div><div class="cassettePage"><div class="smallnote">a collection of songs for one very specific person ♡</div><div class="cassetteSticker" onclick="playlist()"><div class="cassetteLabel"><h3>FOR <span id="cname">YOUR FRIEND</span> ♡</h3><div class="cassette"><div class="reel r1"></div><div class="reel r2"></div><div class="window"></div></div><div class="cassText">press the cassette to play →</div></div></div><div class="smallnote">✦ this opens your YouTube playlist ✦</div></div></div></section>
+<section id="cassettePage" class="page hidden"><div class="card section"><div class="head"><h2>♪ our mixtape</h2><button class="back" onclick="home()">← back</button></div><div class="cassettePage"><div class="smallnote">some classics that we love to listen to,<br>some titles that are appropriate for the here and the now,<br>some other songs that I think you would enjoy,<br>some songs that I told you that I will make you listen to but I forgot to send you before,<br>and a mix of everything, just like you are, a mix of everything. ♡</div><div class="cassetteSticker" onclick="playlist()"><div class="cassetteLabel"><h3>FOR <span id="cname">YOUR FRIEND</span> ♡</h3><div class="cassette"><div class="reel r1"></div><div class="reel r2"></div><div class="window"></div></div><div class="cassText">press the cassette to play →</div></div></div><div class="smallnote">✦ this opens your YouTube playlist ✦</div></div></div></section>
 <section id="surprise" class="page hidden"><div class="card section"><div class="head"><h2>🎁 one more thing...</h2><button class="back" onclick="home()">← back</button></div><div class="surprise"><div class="confetti">✦ ✿ ♡ ✦ ✿</div><div class="big">🎁</div><div class="hug">🫂</div><p>If I could put an actual hug in this website, I would.<br>So for now, please accept this aggressively virtual one.</p><p>♡ ♡ ♡</p><button class="btn" onclick="home()">okay now go listen to the songs →</button></div></div></section>
 <script>
 /* ================= EDIT THESE ================= */
 const CONFIG={
- name:"YOUR FRIEND",
- password:"birthday",
+ name:"Snigdha",
+ password:"Enrique is hot",
  playlistUrl:"https://www.youtube.com/playlist?list=PASTE_YOUR_PLAYLIST_ID_HERE",
- landingDogImage:"", // e.g. "images/snoopy.jpg"
- heroPhoto:"", // e.g. "images/hero.jpg"
+ landingDogImage:"images/snoopy.jpg",
+ heroPhoto:"images/photo-main.jpg",
  memories:[
-  {image:"",caption:"the beginning of something very lovely ♡"},
-  {image:"",caption:"this one still makes me laugh"},
-  {image:"",caption:"one of my favourite days with you"},
-  {image:"",caption:"proof that we actually leave the house sometimes"},
-  {image:"",caption:"a tiny moment I never want to forget"},
-  {image:"",caption:"more memories loading... ♡"},
-  {image:"",caption:"another little piece of us ✿"},
-  {image:"",caption:"this deserved a place here too"},
-  {image:"",caption:"one for the memory box ♡"},
-  {image:"",caption:"still one of my favourites"},
-  {image:"",caption:"a very good day indeed ✦"},
-  {image:"",caption:"and another one because six was never enough ♡"}
+  {image:"images/photo1.jpg",caption:"the person I run to for sharing gossip."},
+  {image:"images/photo2.jpg",caption:"the person I'm proud of for moving abroad and making all of these amazing travel plans, and learning how to be happy both with other people and by herself."},
+  {image:"images/photo3.jpg",caption:"that smile I die for."},
+  {image:"images/photo4.jpg",caption:"look at the sun catching some sun."},
+  {image:"images/photo5.jpg",caption:"the girl I've shared movies, a bed, and way too many things with."},
+  {image:"images/photo6.jpg",caption:"the girl who made winning absurd competitions possible. Best roommate ever."},
+  {image:"images/photo7.jpg",caption:"the girl I can always convince to do silly things with me."},
+  {image:"images/photo8.jpg",caption:"my favorite person to take to new places and cafes."},
+  {image:"images/photo9.jpg",caption:"heh heh, we are silly again."},
+  {image:"images/photo10.jpg",caption:"is there any place we have left to explore together? Here's us chilling out in the trial room, looking smoking as ever."},
+  {image:"images/photo11.jpg",caption:"it's exactly been ten years to this day. Ten of your birthdays, ten of mine."},
+  {image:"images/photo12.jpg",caption:"my favorite person, my best friend, my roomie. I love you."},
  ],
  letter:`I don't know if a website is a normal way to wish someone happy birthday, but you know me — normal was never really the plan.\n\nI hope this year brings you so many lovely little things: ridiculous laughter, good food, exciting plans, peaceful days, and people who make you feel as loved as you deserve to feel.\n\nThank you for being you, for all the memories, all the nonsense, and all the little moments in between.\n\nHappy birthday, you lovely human. ♡`
 };
 /* ============================================= */
 const $=id=>document.getElementById(id);function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
-$('name').textContent=CONFIG.name;$('sname').textContent=CONFIG.name;$('lname').textContent=CONFIG.name;$('cname').textContent=CONFIG.name;
+$('name').textContent=CONFIG.name;$('lname').textContent=CONFIG.name;$('cname').textContent=CONFIG.name;
 if(CONFIG.landingDogImage)$('landingDog').innerHTML='<img src="'+CONFIG.landingDogImage+'" style="width:100%;height:100%;object-fit:contain" alt="Cute dog">';
 if(CONFIG.heroPhoto)$('hero').innerHTML='<img src="'+CONFIG.heroPhoto+'" style="width:100%;height:100%;object-fit:cover" alt="Favourite photo">';
 $('letterText').innerHTML=CONFIG.letter.split(/\n\n+/).map(x=>'<p>'+esc(x).replace(/\n/g,'<br>')+'</p>').join('');
